@@ -1,6 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  vite: {},
   app: {
     head: {
       title: 'Nuxt app',
@@ -10,5 +9,12 @@ export default defineNuxtConfig({
       mode: 'out-in',
     },
   },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+  css: ['@/assets/tailwind.css'],
   srcDir: './src',
 })

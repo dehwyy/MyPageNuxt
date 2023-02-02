@@ -1,5 +1,5 @@
 <template>
-  <div>footer</div>
+  <div class="bg-red-500">footer</div>
 </template>
 
 <script lang="ts" setup>

@@ -1,13 +1,14 @@
 <template>
   <AppWrapper>
     <Navbar />
-    <slot />
+    <ContentWrapper>
+      <slot />
+    </ContentWrapper>
     <Footer />
   </AppWrapper>
 </template>
 
 <script lang="ts" setup>
-
-import Footer from "~/components/footer.vue";
-import AppWrapper from "~/components/appWrapper.vue";
+import Widgets from "~/widgets";
+const {ContentWrapper, AppWrapper} = Widgets.wrappers
 </script>

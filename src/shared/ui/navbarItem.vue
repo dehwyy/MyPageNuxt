@@ -1,6 +1,6 @@
 <template>
   <div>
-    wrapper
+    navbar item
     <slot />
   </div>
 </template>
