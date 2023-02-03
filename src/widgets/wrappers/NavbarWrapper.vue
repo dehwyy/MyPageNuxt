@@ -1,6 +1,8 @@
 <template>
-  <div class="px-10 flex gap-10 text-neo-dark h-20 border-b-2 border-b-neo-dark" style="border-bottom: 0.05rem solid rgba(0, 0, 0, 0.2 )">
-    <slot />
+  <div class="bg-white h-24 flex items-center border-b-2 border-b-black fixed top-0 left-0 right-0">
+    <div class="flex gap-16 w-[800px] mx-auto">
+      <slot />
+    </div>
   </div>
 </template>
 

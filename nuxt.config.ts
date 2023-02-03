@@ -13,8 +13,6 @@ export default defineNuxtConfig({
     ],
   ],
   pwa: {
-    mode: 'development',
-    disable: true,
     manifest: {
       name: 'Nuxt Vite PWA',
       short_name: 'NuxtVitePWA',
@@ -22,14 +20,14 @@ export default defineNuxtConfig({
     },
     workbox: {
       navigateFallback: '/',
-      cleanupOutdatedCaches: true,
     },
     client: {
+      registerPlugin: false,
       installPrompt: true,
       periodicSyncForUpdates: 20,
     },
     devOptions: {
-      enabled: false,
+      enabled: true,
       type: 'module',
     },
   },
@@ -37,6 +35,16 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Nuxt app',
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap',
+        },
+      ],
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'description', content: 'Nuxtで店' },
+      ],
     },
     pageTransition: {
       name: 'page',

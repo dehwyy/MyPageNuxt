@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.vue', './nuxt.config.{js,ts}'],
@@ -13,6 +14,12 @@ module.exports = {
       },
       boxShadow: {
         neo: `1rem 1rem 0 0 #3c3434`,
+      },
+      fontFamily: {
+        inco: ['Inconsolata', ...defaultTheme.fontFamily.sans],
+      },
+      fontSize: {
+        18: '18 px',
       },
     },
   },

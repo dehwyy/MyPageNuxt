@@ -3,15 +3,16 @@ export const useNavbarStore = definePiniaStore('navbar', {
     return {
       navbarItemsData: [
         {
-          innerText: 'navbar1',
+          innerText: 'Home',
         },
         {
-          innerText: 'navbar2',
+          innerText: 'About Us',
+        },
+        {
+          innerText: 'Market',
         },
       ],
     }
   },
-  persist: {
-    key: 'pinia',
-  },
+  persist: false,
 })
