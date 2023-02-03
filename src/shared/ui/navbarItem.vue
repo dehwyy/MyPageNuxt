@@ -1,10 +1,6 @@
+<!--I should provide custom font-->
 <template>
-  <div>
-    navbar item
+  <div class="h-full flex items-center justify-center">
     <slot />
   </div>
 </template>
-
-<script lang="ts" setup>
-
-</script>
