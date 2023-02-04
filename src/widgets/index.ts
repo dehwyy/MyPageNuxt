@@ -3,6 +3,7 @@ import ContentWrapper from './wrappers/ContentWrapper.vue'
 import NavbarWrapper from './wrappers/NavbarWrapper.vue'
 import NavItemWrapper from './wrappers/NavItemWrapper.vue'
 import AboutWrapper from './wrappers/AboutWrapper.vue'
+import SwiperWrapper from './wrappers/SwiperWrapper.vue'
 export default class Widgets {
   static get wrappers() {
     return {
@@ -11,6 +12,7 @@ export default class Widgets {
       NavbarWrapper,
       AboutWrapper,
       NavItemWrapper,
+      SwiperWrapper,
     }
   }
 }

@@ -47,5 +47,10 @@ export const useInfoStore = definePiniaStore('info', {
       '...  ',
     ],
   }),
+  getters: {
+    getLocals: ({ jp, eng, rus }): ILocalFields[] => {
+      return [jp, eng, rus]
+    },
+  },
   persist: false,
 })
