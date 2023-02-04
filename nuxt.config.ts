@@ -59,7 +59,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  css: ['@/assets/tailwind.css', 'swiper/css'],
+  css: ['@/assets/tailwind.css', 'swiper/css', 'swiper/css/effect-creative'],
   srcDir: 'src/',
   vite: {
     plugins: [svgLoader()],

@@ -10,7 +10,7 @@
   </SwiperSlide>
   </SwiperWrapper>
 </template>
-
+<!--I should do interactive slider here-->
 <script lang="ts" setup>
 import GlobalStore from "~/composables/store";
 import Widgets from "~/widgets";
