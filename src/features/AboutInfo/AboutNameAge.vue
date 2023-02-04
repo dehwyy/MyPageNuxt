@@ -1,7 +1,7 @@
 <template>
   <SwiperWrapper>
     <SwiperSlide v-for="local in getLocals">
-      <div class="bg-white border-4 rounded-md border-black shadow-neo p-4 text-center mx-5">
+      <div class="bg-white border-4 rounded-md border-black shadow-neo p-4 text-center m-5">
         {{local.name}},<br />{{local.age}}
       </div>
     </SwiperSlide>

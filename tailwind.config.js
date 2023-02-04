@@ -13,7 +13,7 @@ module.exports = {
         'light-yellow': '#f9d409',
       },
       boxShadow: {
-        neo: `5px 5px 0 0 black`,
+        neo: `10px 0.5rem 0 0 black`,
       },
       fontFamily: {
         inco: ['Inconsolata', ...defaultTheme.fontFamily.sans],

@@ -20,7 +20,7 @@ interface ILocalFields {
 }
 
 interface CreateInfoStoreExtra {
-  profileImage: string
+  profileImages: string[]
   techs: string[]
 }
 

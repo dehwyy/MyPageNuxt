@@ -1,5 +1,6 @@
 <template>
-  <div class="flex flex-col gap-10 w-[500px]">
+  <div class="flex flex-col w-[500px]">
+    <AboutProfileImage />
     <AboutNameAge />
     <AboutInfo />
     <AboutTechs/>
@@ -9,6 +10,5 @@
 <script lang="ts" setup>
 import Features from "~/features";
 
-
-const {AboutTechs, AboutInfo, AboutNameAge} = Features.templates
+const {AboutTechs, AboutInfo, AboutNameAge, AboutProfileImage} = Features.templates
 </script>

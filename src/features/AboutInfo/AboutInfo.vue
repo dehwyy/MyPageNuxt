@@ -1,7 +1,7 @@
 <template>
   <SwiperWrapper>
     <SwiperSlide v-for="local in getLocals">
-      <div class="h-[120px] mx-5 flex items-center justify-center bg-white border-4 rounded-md border-black shadow-neo p-4">
+      <div class="h-[120px] m-5 flex items-center justify-center bg-white border-4 rounded-md border-black shadow-neo p-4">
         {{local.info}}
       </div>
     </SwiperSlide>
