@@ -28,6 +28,8 @@
     "@morev/vue-transitions": "^2.3.6",
     "@pinia/nuxt": "^0.4.6",
     "pinia": "^2.0.30",
-    "vite-plugin-pwa": "^0.14.1"
+    "swiper": "^9.0.2",
+    "vite-plugin-pwa": "^0.14.1",
+    "vite-svg-loader": "^4.0.0"
   }
 }

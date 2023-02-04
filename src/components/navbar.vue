@@ -1,22 +1,25 @@
 <script lang="ts" setup>
-import Components from "~/shared";
 import Widgets from "~/widgets";
 import GlobalStore from "~/composables/store";
 import { storeToRefs } from "pinia";
 import { Ref } from "@vue/reactivity";
 
-const {NavbarItem} = Components.uis
-const {NavbarWrapper} = Widgets.wrappers
+const {NavbarWrapper, NavItemWrapper} = Widgets.wrappers
 const {useNavbarStore} = GlobalStore.store
 
 const navbarStore = useNavbarStore()
 const {navbarItemsData}: IUseNavbarStore<Ref> = storeToRefs(navbarStore)
 
+
 </script>
 
 <template>
     <NavbarWrapper>
-      <NavbarItem v-for="i in navbarItemsData">{{i.innerText}}</NavbarItem>
+      <NavItemWrapper v-for="i in navbarItemsData">
+        <NuxtLink :to="i.href" :target="i.blank ? '_blank' :  ''">
+          {{i.innerText}}
+        </NuxtLink>
+        </NavItemWrapper>
     </NavbarWrapper>
 </template>
 

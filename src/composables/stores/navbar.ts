@@ -1,18 +1,20 @@
 export const useNavbarStore = definePiniaStore('navbar', {
-  state: (): IUseNavbarStore => {
-    return {
-      navbarItemsData: [
-        {
-          innerText: 'Home',
-        },
-        {
-          innerText: 'About Us',
-        },
-        {
-          innerText: 'Market',
-        },
-      ],
-    }
-  },
+  state: (): ICreateNavbarStore => ({
+    navbarItemsData: [
+      {
+        innerText: 'Home',
+        href: '/',
+      },
+      {
+        innerText: 'Projects',
+        href: '/projects',
+      },
+      {
+        innerText: 'Github',
+        href: 'https://github.com/dehwyy',
+        blank: true,
+      },
+    ],
+  }),
   persist: false,
 })
