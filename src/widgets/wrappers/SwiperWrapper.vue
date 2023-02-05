@@ -9,7 +9,7 @@
             disableOnInteraction: true,
           }"
           :loop="true"
-          :mousewheel="true" class="w-[600px] mx-auto mt-5 flex font-semibold">
+          :mousewheel="true" class="w-full mx-auto mt-5 flex font-semibold">
     <slot />
   </swiper>
 </template>

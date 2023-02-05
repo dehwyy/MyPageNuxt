@@ -16,7 +16,7 @@ module.exports = {
       },
       boxShadow: {
         neo: `10px 0.5rem 0 0 black`,
-        wh: `10px 0.5rem 0 0 white`,
+        wh: `10px 0.5rem 0 0 #ffa9b0`,
       },
       fontFamily: {
         inco: ['Inconsolata', ...defaultTheme.fontFamily.sans],
@@ -24,7 +24,18 @@ module.exports = {
       fontSize: {
         18: '18 px',
       },
+      screens: {
+        vsm: { max: '450px' },
+      },
+    },
+    screens: {
+      '2xl': { max: '1535px' },
+      xl: { max: '1279px' },
+      lg: { max: '1023px' },
+      md: { max: '767px' },
+      sm: { max: '639px' },
     },
   },
+
   plugins: [],
 }
