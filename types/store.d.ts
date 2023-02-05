@@ -14,7 +14,9 @@ interface ILocalFields {
   name: string
   techText: string
   hobbies: string[]
+  hobbiesText: string
   quotes: string[]
+  quotesText: string
   age: string
   info: string
 }
