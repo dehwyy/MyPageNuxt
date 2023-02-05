@@ -1,5 +1,5 @@
 <template>
-  <SwiperWrapper class="w-[70%]">
+  <SwiperWrapper class="w-[50%]">
       <SwiperSlide v-for="local in getLocals">
         <div class="m-5 items-center flex flex-col justify-center align-center bg-pale-green border-4 rounded-md border-black shadow-neo p-4">
           <span class="font-bold text-[28px] pb-5">{{local.hobbiesText}}</span>

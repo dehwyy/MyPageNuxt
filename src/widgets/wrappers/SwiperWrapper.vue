@@ -3,7 +3,7 @@
           :effect="'creative'"
           :creativeEffect="effect"
           :slides-per-view="1"
-          :space-between="50"
+          :space-between="1"
           :autoplay="{
             delay: 5000,
             disableOnInteraction: true,
