@@ -1,7 +1,7 @@
 <template>
   <SwiperWrapper>
   <SwiperSlide v-for="local in getLocals">
-    <div class="h-[350px] m-5 flex flex-wrap gap-2 bg-white border-4 rounded-md border-black shadow-neo p-4">
+    <div class="h-[350px] bg-pale-pink m-5 flex flex-wrap gap-2 bg-white border-4 rounded-md border-black shadow-neo p-4">
       {{local.techText}}
       <div v-for="tech in techs" class="flex-auto text-center font-bold">
         {{tech}}

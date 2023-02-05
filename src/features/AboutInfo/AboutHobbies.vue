@@ -2,8 +2,8 @@
   <SwiperWrapper class="w-[70%]">
       <SwiperSlide v-for="local in getLocals">
         <div class="m-5 items-center flex flex-col justify-center align-center bg-white border-4 rounded-md border-black shadow-neo p-4">
-          {{local.hobbiesText}}
-          <div v-for="hobby in local.hobbies" class="h-[60px] flex items-center m-5 text-center">
+          <span class="font-bold text-[28px] pb-5">{{local.hobbiesText}}</span>
+          <div v-for="hobby in local.hobbies" class="h-[40px] flex items-center m-5 text-center underline">
             {{hobby}}
           </div>
         </div>

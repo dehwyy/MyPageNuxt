@@ -15,8 +15,6 @@ interface ILocalFields {
   techText: string
   hobbies: string[]
   hobbiesText: string
-  quotes: string[]
-  quotesText: string
   age: string
   info: string
 }
