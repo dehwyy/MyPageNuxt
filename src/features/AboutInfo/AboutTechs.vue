@@ -28,9 +28,3 @@ const {techs, getLocals}: IFromStore = GlobalStore.store.useInfoStore()
 
 const {SwiperWrapper} = Widgets.wrappers
 </script>
-
-<style>
-a {
-  color: #2f2f2f
-}
-</style>

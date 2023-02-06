@@ -3,17 +3,17 @@
           :effect="'creative'"
           :creativeEffect="effect"
           :slides-per-view="1"
-          :space-between="1"
+          :space-between="10"
           :autoplay="{
             delay: 5000,
             disableOnInteraction: true,
           }"
           :loop="true"
-          :mousewheel="true" class="w-full mx-auto mt-5 flex font-semibold">
+          class="w-full mx-auto mt-5 flex font-semibold">
     <slot />
   </swiper>
 </template>
-
+<!--TODO: Have to do slide change onclick on small&medium screens -->
 <script lang="ts" setup>
 import { EffectCreative, Autoplay } from 'swiper';
 const swiperModules = [EffectCreative, Autoplay]

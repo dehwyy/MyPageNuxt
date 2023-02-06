@@ -24,19 +24,18 @@ export default defineNuxtConfig({
       navigateFallback: '/',
     },
     client: {
-      registerPlugin: false,
       installPrompt: true,
       periodicSyncForUpdates: 20,
     },
     devOptions: {
-      enabled: true,
+      enabled: false,
       type: 'module',
     },
   },
   vueTransitions: {},
   app: {
     head: {
-      title: 'Nuxt app',
+      title: 'dehwyy',
       link: [
         {
           rel: 'stylesheet',

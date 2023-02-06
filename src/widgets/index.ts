@@ -4,6 +4,7 @@ import NavbarWrapper from './wrappers/NavbarWrapper.vue'
 import NavItemWrapper from './wrappers/NavItemWrapper.vue'
 import AboutWrapper from './wrappers/AboutWrapper.vue'
 import SwiperWrapper from './wrappers/SwiperWrapper.vue'
+import ProjectsCardsWrapper from './wrappers/ProjectsCardsWrapper.vue'
 export default class Widgets {
   static get wrappers() {
     return {
@@ -13,6 +14,7 @@ export default class Widgets {
       AboutWrapper,
       NavItemWrapper,
       SwiperWrapper,
+      ProjectsCardsWrapper,
     }
   }
 }
