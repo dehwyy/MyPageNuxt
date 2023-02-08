@@ -18,6 +18,7 @@
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
+    "ignorePatterns": "**/*.test.ts",
     "plugins": [
         "vue",
         "@typescript-eslint",

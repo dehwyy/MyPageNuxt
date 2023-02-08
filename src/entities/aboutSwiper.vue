@@ -13,5 +13,5 @@
 <script lang="ts" setup>
 import Features from "~/features";
 
-const {AboutTechs, AboutInfo, AboutNameAge, AboutProfileImage, AboutHobbies} = Features.templates
+const {AboutTechs, AboutInfo, AboutNameAge, AboutProfileImage, AboutHobbies} = Features.fromAbout
 </script>

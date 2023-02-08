@@ -16,7 +16,6 @@
 <script lang="ts" setup>
 import GlobalStore from "~/composables/store";
 import Widgets from "~/widgets";
-import {SwiperSlide} from "swiper/vue";
 
 interface IFromStore {
   techs: string[]

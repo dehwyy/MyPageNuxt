@@ -1,8 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import svgLoader from 'vite-svg-loader'
-
 export default defineNuxtConfig({
   modules: [
+    'nuxt-swiper',
     '@vite-pwa/nuxt',
     '@vueuse/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
@@ -14,6 +14,7 @@ export default defineNuxtConfig({
       },
     ],
   ],
+  swiper: {},
   pwa: {
     manifest: {
       name: 'Nuxt Vite PWA',
@@ -31,6 +32,9 @@ export default defineNuxtConfig({
       enabled: false,
       type: 'module',
     },
+  },
+  imports: {
+    imports: [{ name: 'useSwiper', from: 'swiper/vue' }],
   },
   vueTransitions: {},
   app: {
@@ -58,9 +62,13 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  css: ['@/assets/tailwind.css', 'swiper/css', 'swiper/css/effect-creative'],
+  css: ['@/assets/tailwind.css'],
   srcDir: 'src/',
   vite: {
     plugins: [svgLoader()],
+    test: {
+      root: 'src/',
+      testNamePattern: new RegExp('.test.ts$'),
+    },
   },
 })

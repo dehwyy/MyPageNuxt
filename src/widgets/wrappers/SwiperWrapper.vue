@@ -26,5 +26,4 @@ const effect = {
   }
 }
 
-import { Swiper } from 'swiper/vue'
 </script>

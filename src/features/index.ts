@@ -3,8 +3,9 @@ import AboutNameAge from './AboutInfo/AboutNameAge.vue'
 import AboutTechs from './AboutInfo/AboutTechs.vue'
 import AboutProfileImage from './AboutInfo/AboutProfileImage.vue'
 import AboutHobbies from './AboutInfo/AboutHobbies.vue'
+import ProjectCards from './Projects/ProjectCards.vue'
 export default class Features {
-  static get templates() {
+  static get fromAbout() {
     return {
       AboutInfo,
       AboutNameAge,
@@ -12,5 +13,8 @@ export default class Features {
       AboutHobbies,
       AboutProfileImage,
     }
+  }
+  static get fromProjects() {
+    return { ProjectCards }
   }
 }

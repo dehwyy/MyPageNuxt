@@ -12,7 +12,6 @@
 </template>
 
 <script lang="ts" setup>
-import {SwiperSlide} from "swiper/vue";
 import Widgets from "~/widgets";
 import GlobalStore from "~/composables/store";
 

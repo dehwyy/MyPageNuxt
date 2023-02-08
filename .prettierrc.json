@@ -3,5 +3,5 @@
   "semi": false,
   "singleQuote": true,
   "bracketSameLine": true,
-  "vueIndentScriptAndStyle": true
+  "vueIndentScriptAndStyle": true,
 }
