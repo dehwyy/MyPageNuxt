@@ -1,6 +1,6 @@
 const nextCards = '/projects/nextcards'
 const social = '/projects/social'
-const solidCards = '/projects/solidCards'
+const solidCards = '/projects/solidcards'
 export const useProjectsStore = definePiniaStore('projects', {
   state: (): IProjectStore => ({
     nextCards: {
