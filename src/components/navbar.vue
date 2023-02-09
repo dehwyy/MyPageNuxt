@@ -25,7 +25,7 @@ const setAccessible = () => {
 <template>
     <NavbarWrapper :is-accessible="isAccessible">
       <NavItemWrapper v-for="i in navbarItemsData">
-        <NuxtLink :to="i.href" :target="i.blank ? '_blank' :  ''" @click="setAccessible">
+        <NuxtLink :to="i.href" :target="i.blank ? '_blank' :  ''" @click="setAccessible" :data-e2e="i">
           {{i.innerText}}
         </NuxtLink>
         </NavItemWrapper>
