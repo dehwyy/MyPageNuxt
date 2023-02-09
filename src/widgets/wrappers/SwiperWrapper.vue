@@ -1,5 +1,6 @@
 <template>
   <swiper :modules="swiperModules" :grabCursor="true"
+          :navigation="width < 1000 && true"
           :effect="'creative'"
           :creativeEffect="effect"
           :slides-per-view="1"
@@ -9,14 +10,14 @@
             disableOnInteraction: true,
           }"
           :loop="true"
+          :class="width < 1000 && 'swiperOverride'"
           class="w-full mx-auto mt-5 flex font-semibold">
     <slot />
   </swiper>
 </template>
-<!--TODO: Have to do slide change onclick on small&medium screens -->
 <script lang="ts" setup>
-import { EffectCreative, Autoplay } from 'swiper';
-const swiperModules = [EffectCreative, Autoplay]
+import { EffectCreative, Autoplay, Navigation } from 'swiper';
+const swiperModules = [EffectCreative, Autoplay, Navigation]
 const effect = {
   prev: {
     translate: [0, 0, -400],
@@ -26,4 +27,17 @@ const effect = {
   }
 }
 
+const {width} = useWindowSize()
 </script>
+
+<style>
+.swiperOverride > .swiper-button-prev, .swiperOverride > .swiper-button-next {
+  margin-top: 0;
+  width: 50%;
+  top: 0;
+  height: 100%;
+}
+.swiperOverride > .swiper-button-prev:after,  .swiperOverride > .swiper-button-next:after{
+  content: "";
+}
+</style>

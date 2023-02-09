@@ -19,9 +19,17 @@ interface ILocalFields {
   info: string
 }
 
+type techsStack = "frameworks" | "bundlers" | "utilsForFrameworks" | "ui" | "integrationWithDb" | "testing" |
+  "codeQuality" | "security" | "wellKnown"
+
+interface tech {
+  text: string
+  techs: string[]
+}
+
 interface CreateInfoStoreExtra {
   profileImages: string[]
-  techs: string[]
+  techs: Record<techsStack, tech>
 }
 
 type ICreateInfoStore = CreateInfoStoreExtra & Record<local, ILocalFields>

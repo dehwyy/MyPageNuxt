@@ -38,6 +38,7 @@ export default defineNuxtConfig({
   },
   vueTransitions: {},
   app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       title: 'dehwyy',
       link: [
@@ -50,10 +51,6 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: 'Nuxtで店' },
       ],
-    },
-    pageTransition: {
-      name: 'page',
-      mode: 'out-in',
     },
   },
   postcss: {

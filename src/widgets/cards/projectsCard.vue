@@ -1,16 +1,16 @@
 <template>
-    <div :class="randomClassColor" class="p-4 gap-2 flex flex-col m-5 text-center justify-center border-4 rounded-md border-black shadow-neo p-4">
-      <div class="text-4xl font-semibold">
+    <div :class="randomClassColor" class="bg-pale-violet text-xl p-4 gap-2 flex flex-col m-5 text-center justify-center border-4 rounded-md border-black shadow-neo p-4">
+      <div class="text-4xl font-bold underline">
         {{title}}
       </div>
-      <div>
+      <div class="w-5/6 mx-auto">
         {{desc}}
       </div>
       <div>
-        My person rate is <span class="font-bold">{{personalRate}}</span>
+        My personal rate is <span class="font-bold">{{personalRate}}</span>
       </div>
       <div class="mb-5">
-        <Panel :list="stack">Stack:</Panel>
+        <Panel :list="stack"><span class="underline font-bold">Stack</span> ↓</Panel>
       </div>
       <SwiperImage>
         <SwiperSlide v-for="image in images">
@@ -19,7 +19,7 @@
       </SwiperImage>
     </div>
 </template>
-
+<!--TODO: redo screen of the apps-->
 <script lang="ts" setup>
 import Shared from "~/shared";
 
@@ -31,7 +31,7 @@ interface cardProps {
   images: {imageUrl: string, text: string}[]
 }
 defineProps<cardProps>()
-const colors = ["bg-pale-green", "bg-pale-yellow", "bg-pale-ocean"]
+const colors = ["bg-pale-ocean", "bg-pale-violet", "bg-pale-pink"]
 
 const randomClassColor = Shared.utils.ArrayRandomizer.randomize(colors)[0]
 const {SwiperImage, Panel} = Shared.ui

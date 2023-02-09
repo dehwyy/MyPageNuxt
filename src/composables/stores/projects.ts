@@ -5,7 +5,7 @@ export const useProjectsStore = definePiniaStore('projects', {
   state: (): IProjectStore => ({
     nextCards: {
       title: 'UseMemorize',
-      description: 'this is  description',
+      description: 'Next/Graphql App, UseMemorize should be helpful tool for memorizing different kind of information like foreign words or maybe math formulas<PROJECT IS UNFINISHED>',
       stack: ['Next', 'Nest', 'GraphQL', 'Apollo'],
       personalRate: 7,
       images: [
@@ -17,7 +17,7 @@ export const useProjectsStore = definePiniaStore('projects', {
     },
     social: {
       title: 'WebSocial',
-      description: 'this is  description',
+      description: 'Full stack social with JWT(access + refresh) authorization, posts, profile information, friends, view of other profiles',
       stack: ['React', 'Express', 'Mongoose', 'RtkQuery'],
       personalRate: 8,
       images: [
@@ -29,7 +29,7 @@ export const useProjectsStore = definePiniaStore('projects', {
     },
     solidCards: {
       title: 'SolidCards',
-      description: 'this is  description',
+      description: 'Light version of "UseMemorize", but with REST and Solidjs',
       stack: ['Solid', 'Nest', 'Postgres', 'Typeorm'],
       personalRate: 4,
       images: [

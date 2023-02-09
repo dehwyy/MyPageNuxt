@@ -1,29 +1,37 @@
 <template>
-  <SwiperWrapper>
-  <SwiperSlide v-for="local in getLocals">
-    <div class="m-5 bg-[#2F2F2FFF] text-white border-4 rounded-md border-pale-pink text-4xl shadow-wh p-4 text-center">
-      {{local.techText}}
-      <div class="mt-10 text-2xl grid grid-cols-6 lg:grid-cols-2 items-center gap-x-4 gap-y-4 bg-clip-text bg-gradient-to-r from-pink-400 to-light-yellow">
-        <div v-for="tech in techs" class="flex-auto text-center font-bold text-transparent bg-transparent">
-          {{tech}}
+  <div class="m-5 bg-pale-violet text-white border-4 rounded-md border-black text-4xl shadow-neo p-4 text-center">
+    <swiper :navigation="width < 1000 && true"
+            :modules="[Autoplay, Navigation]"
+            :autoplay="{delay: 5000,disableOnInteraction: true,}"
+            :loop="true"
+            :class="width < 1000 && 'swiperOverride'"
+            class="mx-auto mt-5 font-semibold cursor-grab">
+      <SwiperSlide v-for="local in getLocals">
+        <div class="text-black w-min m-auto min-w-[400px] md:min-w-full">
+          {{local.techText}}
         </div>
+      </SwiperSlide>
+    </swiper>
+    <div class="gap-6 grid grid-cols-3 premd:grid-cols-2 sm:grid-cols-1 justify-center text-black mt-10 text-2xl">
+      <div v-for="tech in getTechs" class="basis-1/4">
+        <Dialog :fields="tech.techs" :extra-text="tech.text"/>
       </div>
     </div>
-  </SwiperSlide>
-  </SwiperWrapper>
+  </div>
 </template>
-<!--I should do interactive slider here-->
 <script lang="ts" setup>
 import GlobalStore from "~/composables/store";
-import Widgets from "~/widgets";
+import { Autoplay, Navigation } from 'swiper';
+import Shared from "~/shared";
 
 interface IFromStore {
-  techs: string[]
+  getTechs:  {text: string, techs: string[]}[]
   getLocals: {techText: string}[]
 }
 
-const {techs, getLocals}: IFromStore = GlobalStore.store.useInfoStore()
+const {getTechs, getLocals}: IFromStore = GlobalStore.store.useInfoStore()
 
+const {width} = useWindowSize()
 
-const {SwiperWrapper} = Widgets.wrappers
+const {Dialog} = Shared.ui
 </script>
