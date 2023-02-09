@@ -62,9 +62,5 @@ export default defineNuxtConfig({
   srcDir: 'src/',
   vite: {
     plugins: [svgLoader()],
-    test: {
-      root: 'src/',
-      testNamePattern: new RegExp('.test.ts$'),
-    },
   },
 })
