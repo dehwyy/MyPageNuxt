@@ -10,8 +10,7 @@ const {useNavbarStore} = GlobalStore.store
 const navbarStore = useNavbarStore()
 const {navbarItemsData}: IUseNavbarStore<Ref> = storeToRefs(navbarStore)
 
-const isAccessible = ref(false) as Ref<boolean>
-
+const isAccessible = ref(true) as Ref<boolean>
 
 const setAccessible = () => {
   isAccessible.value = !isAccessible.value
@@ -19,12 +18,6 @@ const setAccessible = () => {
     isAccessible.value = true
   }, 800)
 }
-
-onMounted(async () => {
-  setTimeout(() => {
-    isAccessible.value = true
-  }, 800)
-})
 
 
 </script>
