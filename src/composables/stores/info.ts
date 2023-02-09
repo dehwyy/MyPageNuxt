@@ -2,7 +2,7 @@ export const useInfoStore = definePiniaStore('info', {
   state: (): ICreateInfoStore => ({
     jp: {
       name: '私はエゴるで',
-      hobbies: ['日本語を勉強する', 'IT', '本を読むこと'],
+      hobbies: ['日本語を勉強すること', 'IT', '本を読むこと'],
       hobbiesText: '私の趣味:',
       age: '16歳だ',
       info: 'ITが好きなんだ',
