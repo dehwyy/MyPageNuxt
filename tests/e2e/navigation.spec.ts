@@ -7,6 +7,5 @@ describe('My test', async () => {
 
   it("navigation", async () => {
     const body = await $fetch('/')
-    console.log(body);
   })
 })
