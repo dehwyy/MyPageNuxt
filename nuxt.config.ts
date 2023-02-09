@@ -17,8 +17,8 @@ export default defineNuxtConfig({
   swiper: {},
   pwa: {
     manifest: {
-      name: 'Nuxt Vite PWA',
-      short_name: 'NuxtVitePWA',
+      name: 'dehwyy page',
+      short_name: 'dehwyy',
       theme_color: '#ffffff',
     },
     workbox: {
@@ -34,13 +34,13 @@ export default defineNuxtConfig({
     },
   },
   imports: {
-    imports: [{ name: 'useSwiper', from: 'swiper/vue' }],
   },
   vueTransitions: {},
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       title: 'dehwyy',
+      viewport: "width=device-width, initial-scale=1",
       link: [
         {
           rel: 'stylesheet',
@@ -48,8 +48,7 @@ export default defineNuxtConfig({
         },
       ],
       meta: [
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Nuxtで店' },
+        { name: 'description', content: "dehwyy" },
       ],
     },
   },
