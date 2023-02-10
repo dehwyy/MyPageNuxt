@@ -3,7 +3,7 @@
     <div v-for="card in getCards">
       <ProjectsCard :title="card.title" :images="card.images"
                     :desc="card.description" :personal-rate="card.personalRate"
-                    :stack="card.stack"/>
+                    :stack="card.stack" />
     </div>
   </div>
 </template>
@@ -24,4 +24,5 @@ interface IProjectStore {
 
 const { getCards }: IProjectStore = GlobalStore.store.useProjectsStore()
 const { ProjectsCard } = Widgets.cards
+
 </script>

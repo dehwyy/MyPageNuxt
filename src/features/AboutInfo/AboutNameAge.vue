@@ -12,13 +12,13 @@
 import Widgets from "~/widgets";
 import GlobalStore from "~/composables/store";
 
+
 interface IGetLocal {
   name: string,
   age: string
 }
 
 const {getLocals}: {getLocals: IGetLocal[]} = GlobalStore.store.useInfoStore()
-
 
 const {SwiperWrapper} = Widgets.wrappers
 </script>

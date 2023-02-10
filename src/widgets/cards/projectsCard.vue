@@ -1,5 +1,5 @@
 <template>
-    <div :class="randomClassColor" class="bg-pale-violet text-xl p-4 gap-2 flex flex-col m-5 text-center justify-center border-4 rounded-md border-black shadow-neo p-4">
+    <div v-intersection-observer="onIntersectionObserver" :class="[randomClassColor, constClass, isVisible ? visibleClass : randomClassTransition]" class="bg-pale-violet text-xl p-4 gap-2 flex flex-col m-5 text-center justify-center border-4 rounded-md border-black shadow-neo p-4">
       <div class="text-4xl font-bold underline">
         {{title}}
       </div>
@@ -22,6 +22,9 @@
 <!--TODO: redo screen of the apps-->
 <script lang="ts" setup>
 import Shared from "~/shared";
+import { vIntersectionObserver } from '@vueuse/components'
+
+const {IntersectionObserver} = Shared.utils
 
 interface cardProps {
   title: string
@@ -32,7 +35,14 @@ interface cardProps {
 }
 defineProps<cardProps>()
 const colors = ["bg-pale-ocean", "bg-pale-violet", "bg-pale-pink"]
+const transitions = ["translate-x-20 opacity-0", "-translate-x-20 opacity-0", "translate-y-10 opacity-0"]
 
+const constClass = "transition-all duration-1000" // const class
+const visibleClass = 'transform-none opacity-100' // visible class
+
+const [isVisible, onIntersectionObserver]= IntersectionObserver.useIntersecting()
 const randomClassColor = Shared.utils.ArrayRandomizer.randomize(colors)[0]
+const randomClassTransition = Shared.utils.ArrayRandomizer.randomize(transitions)[0]
+
 const {SwiperImage, Panel} = Shared.ui
 </script>
