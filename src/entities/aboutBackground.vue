@@ -1,5 +1,5 @@
 <template>
-  <div v-intersection-observer="onIntersectionObserver" :class="[constClass, isVisible ? visibleClass : unvisibleClassY]" class="duration-[1500ms] mx-auto bg-[url('/giga.jpg')] w-[45%] min-w-[400px] h-[400px] vsm:min-w-[300px] vsm:h-[300px] bg-cover bg-no-repeat relative rounded-2xl">
+  <div v-intersection-observer="onIntersectionObserver" :class="[constClass, isVisible ? visibleClass : unvisibleClassY]" class="duration-[1500ms] mx-auto bg-[url('/giga.jpg')] w-[45%] min-w-[400px] h-[400px] vsm:min-w-[270px] vsm:h-[270px] bg-cover bg-no-repeat relative rounded-2xl">
       <div class="select-none flex absolute bottom-[10px] left-[50%] translate-x-[-50%] text-6xl font-semibold text-white">
         dehwyy
       </div>

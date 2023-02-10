@@ -26,6 +26,7 @@ module.exports = {
       },
       screens: {
         vsm: { max: '450px' },
+        lowest: { max: '312px' },
       },
     },
     screens: {

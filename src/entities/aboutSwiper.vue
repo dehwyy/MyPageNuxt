@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col w-[1000px] lg:w-[85vw] select-none">
     <AboutProfileImage v-intersection-observer="onIntersectionObserver1" :class="['delay-500', constClass, isVisible1 ? visibleClass : unvisibleClassY]"/>
-    <div class="flex gap-12 lg:flex-col lg:gap-0">
+    <div class="flex gap-12 lg:flex-col lg:gap-0 min-w-[270px]">
       <AboutNameAge v-intersection-observer="onIntersectionObserver2" :class="[constClass, isVisible2 ? visibleClass : unvisibleClassXM]"/>
       <AboutInfo v-intersection-observer="onIntersectionObserver5" :class="[constClass, isVisible5 ? visibleClass : unvisibleClassXP]"/>
     </div>

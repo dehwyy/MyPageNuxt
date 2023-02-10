@@ -1,5 +1,5 @@
 <template>
-  <div class="m-5 bg-pale-violet text-white border-4 rounded-md border-black text-4xl shadow-neo p-4 text-center">
+  <div class="min-w-[250px] vsm:text-3xl vsm:mx-3 m-5 bg-pale-violet text-white border-4 rounded-md border-black text-4xl shadow-neo p-4 text-center">
     <swiper :navigation="width < 1281 && true"
             :modules="[Autoplay, Navigation]"
             :autoplay="{delay: 5000,disableOnInteraction: true,}"
@@ -7,7 +7,7 @@
             :class="width < 1281 && 'swiperOverride'"
             class="mx-auto mt-5 font-semibold cursor-grab">
       <SwiperSlide v-for="local in getLocals">
-        <div class="text-black w-min m-auto min-w-[400px] md:min-w-full">
+        <div class="text-black w-min m-auto min-w-[400px] md:min-w-full vsm:-mb-10">
           {{local.techText}}
         </div>
       </SwiperSlide>

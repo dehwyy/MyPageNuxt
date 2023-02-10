@@ -11,7 +11,7 @@
           }"
           :loop="true"
           :class="width < 1281 && 'swiperOverride'"
-          class="w-full mx-auto mt-5 flex font-semibold">
+          class="w-full mx-auto mt-5 flex font-semibold min-w-[275px]">
     <slot />
   </swiper>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <div v-intersection-observer="onIntersectionObserver" :class="[randomClassColor, constClass, isVisible ? visibleClass : randomClassTransition]" class="bg-pale-violet text-xl p-4 gap-2 flex flex-col m-5 text-center justify-center border-4 rounded-md border-black shadow-neo p-4">
+    <div v-intersection-observer="onIntersectionObserver" :class="[randomClassColor, constClass, isVisible ? visibleClass : randomClassTransition]" class="lowest:overflow-scroll vsm:mx-0 bg-pale-violet text-xl p-4 gap-2 flex flex-col m-5 text-center justify-center border-4 rounded-md border-black shadow-neo p-4">
       <div class="text-4xl font-bold underline">
         {{title}}
       </div>
