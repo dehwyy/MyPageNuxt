@@ -1,6 +1,6 @@
 <template>
  <Swiper :modules="swiperModules" :grabCursor="true"
-         :navigation="width < 1000 && true"
+         :navigation="width < 1281 && true"
          :effect="'fade'"
          :slides-per-view="1"
          :space-between="10"
@@ -8,7 +8,7 @@
             delay: 5000,
             disableOnInteraction: true,
           }"
-         :class="width < 1000 && 'swiperOverride'"
+         :class="width < 1281 && 'swiperOverride'"
          :loop="true" class="w-[100%] overflow-hidden">
    <slot />
  </Swiper>

@@ -1,6 +1,6 @@
 <template>
   <swiper :modules="swiperModules" :grabCursor="true"
-          :navigation="width < 1000 && true"
+          :navigation="width < 1281 && true"
           :effect="'creative'"
           :creativeEffect="effect"
           :slides-per-view="1"
@@ -10,8 +10,8 @@
             disableOnInteraction: true,
           }"
           :loop="true"
-          :class="width < 1000 && 'swiperOverride'"
-          class="w-full mx-auto mt-5 flex font-semibold">
+          :class="width < 1281 && 'swiperOverride'"
+          class="w-full mx-auto mt-5 flex font-semibold min-w-[275px]">
     <slot />
   </swiper>
 </template>
