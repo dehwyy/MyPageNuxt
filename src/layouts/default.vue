@@ -1,6 +1,11 @@
 <template>
     <AppWrapper>
       <Navbar />
+      <ClientOnly>
+        <div class="fixed top-28 right-10 z-50 premd:right-5 lowest:right-3 premd:top-24">
+          <Helper />
+        </div>
+      </ClientOnly>
       <ContentWrapper>
         <slot />
       </ContentWrapper>
@@ -10,6 +15,7 @@
 
 <script lang="ts" setup>
 import Widgets from "~/widgets";
+import Helper from "~/components/Helper.vue";
 const {ContentWrapper, AppWrapper} = Widgets.wrappers
 </script>
 

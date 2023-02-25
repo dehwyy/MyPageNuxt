@@ -25,10 +25,10 @@ export const useInfoStore = definePiniaStore('info', {
       techText: 'Я знаю:',
     },
     profileImages: [
-      'https://avatars.githubusercontent.com/u/103949460?v=4',
-      'https://sun9-68.userapi.com/impg/-YEwOep1yOHZmV6F3-Z8XC_HP2GDiOoEP6XekA/_OTpcMMEyNI.jpg?size=828x807&quality=95&sign=89373c2f858271c65aae3d19fd2beb59&type=album',
-      'https://sun9-85.userapi.com/impg/QiH9W0PobEjVjZsuDwGX5iKnDFuuyI7fGVx_5A/VZxGwaA_u1k.jpg?size=850x1185&quality=95&sign=b515481bffd26e100e8256f7ba4e2b79&type=album',
-      'https://sun9-53.userapi.com/impf/D_A8deC9rntGbNhK6BwU5Kg41oLByzWNvGHl_Q/-1wdqpUdnI0.jpg?size=1053x1053&quality=96&sign=4af8e5eaf195eebd1c83472e3e0105d2&type=album',
+      '/giga.jpg',
+      '/K.jpg',
+      '/N.jpg',
+      '/I.jpg',
     ],
     techs: {
       frameworks: {text: "Frameworks", techs: ["React", "Vue", "Solid", "Next", "Nuxt", "Nest", "Express"]},
