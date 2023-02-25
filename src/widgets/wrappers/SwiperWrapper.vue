@@ -1,6 +1,7 @@
 <template>
   <swiper :modules="swiperModules" :grabCursor="true"
           :navigation="width < 1281 && true"
+          :pagination="{dynamicBullets: true}"
           :effect="'creative'"
           :creativeEffect="effect"
           :slides-per-view="1"
