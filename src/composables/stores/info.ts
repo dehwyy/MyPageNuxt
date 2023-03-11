@@ -31,15 +31,15 @@ export const useInfoStore = definePiniaStore('info', {
       '/I.jpg',
     ],
     techs: {
-      frameworks: {text: "Frameworks", techs: ["React", "Vue", "Solid", "Next", "Nuxt", "Nest", "Express"]},
+      frameworks: {text: "Frameworks", techs: ["React", "Vue", "Solid", "Next (v13 and older)", "Nuxt", "Astro", "Svelte", "Lit", "Nest", "Express"]},
       ui: { text: "UI", techs: ["Materialize", "Tailwind", "MaterialUI", "Bootstrap", "Styled-components", "Emotion"]},
-      utilsForFrameworks: {text: "Utilities",techs: ["Vuex", "MobX", "Pinia", "Apollo", "RTK", 'Axios', 'Ky', "React-hook-form", "Formik", ] },
-      integrationWithDb: {text: "Databases", techs: ['MongoDB', 'Postgres', 'Mongoose', 'Typeorm']},
+      utilsForFrameworks: {text: "Utilities",techs: ["Vuex", "MobX", "Pinia", "Apollo", "ReduxToolKit", "Zustand", "Nanostores", 'Axios', 'Ky', "React-hook-form", "Formik", "NextAuth" ] },
+      integrationWithDb: {text: "Databases", techs: ['MongoDB', 'Postgres', 'Mongoose', 'Typeorm', "Prisma", "Supabase"]},
       bundlers: { text: "Bundlers", techs: ["Vite", "Webpack", "Esbuild",'Babel',]},
       codeQuality: {text: "Code quality", techs: ['Prettier','ESlint']},
-      security: {text: "Security", techs: ['JWT', 'Bcryptjs', 'Env']},
-      testing: {text: "Testing", techs: ['Jest',  'Cypress', 'Swagger', 'Supertest', 'Testing-library', 'Vitest', "Postman"]},
-      wellKnown: {text: "Extra", techs: ['Typescript','Websockets', 'Graphql', 'PWA', "SOLID", "MV-patterns", "Feature-sliced Arch", "Module Arch",'Canvas','Python',]}
+      security: {text: "Security", techs: ['JWT', 'Bcryptjs', 'Env', "OAuth"]},
+      testing: {text: "Testing", techs: ['Jest',  'Cypress', "Playwright", 'Swagger', 'Supertest', 'Testing-library', 'Vitest', "Postman", "Github actions"]},
+      wellKnown: {text: "Extra", techs: ['Typescript','Websockets', 'Graphql', 'PWA', "SOLID", "CI/CD", "MV-patterns", "Feature-sliced Arch", "Module Arch",'Canvas','Python',]}
     }
   }),
   getters: {
